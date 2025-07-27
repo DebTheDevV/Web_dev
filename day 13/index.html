@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entities, Code tag </title>
+</head>
+
+<body>
+
+    <!-- HTML Entities:
+         Entities are used to display reserved characters like <, >, & etc., or invisible characters like non-breaking spaces.
+         Examples:
+         &lt; → <
+         &gt; → >
+         &amp; → &
+         &copy; → ©
+         &nbsp; → (non-breaking space) -->
+    3>4 this is the code for paragraph &lt;p&gt;&lt;/p&gt;
+    <pre> <!-- The <pre> tag preserves whitespace and line breaks exactly as written inside the code block -->
+        <p>
+            This is a para
+
+            thid is after few lines       and after some gap
+        </p>
+
+        Copyright&copy;   &nbsp;  &nbsp; &nbsp; &nbsp;        codewithharry
+        <code>
+            <!-- <code> is used to display code snippets inside your page.
+                 You can also use it with the <pre> tag to preserve formatting. -->
+            this is your code
+
+            <!-- prism library usage   -->
+        </code>
+
+        <blockquote cite="https://www.google.com">
+            "The future belongs to those who believe in the beauty of their dreams."
+        </blockquote>
+        <!-- <blockquote> is used to indicate quotations. 
+             The 'cite' attribute optionally provides the source of the quote. -->
+    </pre>
+
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Your browser does not support the HTML canvas tag.
+    </canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "skyblue";
+        ctx.fillRect(20, 20, 150, 60);
+    </script>
+    <!-- <canvas> is used to draw graphics using JavaScript.
+         In this example, we draw a sky-blue rectangle using the canvas 2D context. -->
+</body>
+
+</html>
