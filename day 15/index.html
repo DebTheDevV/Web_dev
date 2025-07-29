@@ -1,0 +1,43 @@
+<!-- inline css , internal css , external css
+ difference between inline css and  internal css is tht , inline css har bar likhna padhega , jitni bhi bar , i am writing h1 , bar bar add krna padhega ..
+
+ whereas in internal css , ekbar h1 ka style add kr de toh hhar h1 mei add ho jayega
+
+
+ now , external css is liye use hota hain , if we keep using the internal style tag woh bada hota jayega .... and it will occupy a lot of  space , to we will use the link tag
+
+ #in ideal scenarios , dont try to use inline css
+
+
+  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Doc </title>
+    <style>
+        /* intermal css */
+        h1{
+            background-color: rgb(86, 10, 10);
+            color : yellow
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- inline css -->
+    <h1 style="color: yellow; background-color: red;">Three ways to add css in html</h1>
+    <div>
+       <ol>
+        <li>Inline CSS</li>
+        <li>Internal CSS</li>
+        <li>External css</li>
+       </ol>
+    </div>
+    <p>
+        Everyone is a good boy  in some way or other . Does this makes any sense
+    </p>
+    
+</body>
+</html>
