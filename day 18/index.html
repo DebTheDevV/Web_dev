@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS box model</title>
+    <style>
+        *{
+            margin: 0; 
+            /* The universal selector (*) removes default margin from all elements 
+               so we can have full control over spacing. 
+               Shortcut in Emmet: m:0 */
+            padding: 0;
+            /* Removes default padding from all elements. 
+               Shortcut in Emmet: p:0 */
+        }
+        .box{
+            background-color: aqua;
+            /* All boxes will have aqua background color. */
+        }
+        .box1{
+                color: black;
+                padding: 10px;
+                /* Padding is the space between the content and the border.
+                   It increases the visible size of the element unless we use box-sizing. */
+                border:2px solid blue;
+                /* A 2px solid blue border around the element. */
+                margin: 25px;
+                /* Margin is the space outside the border — 
+                   it separates this box from other elements. */
+                height: 200px;
+                /* This is the height of the content area by default. 
+                   But if we don’t use box-sizing, padding and border will 
+                   add to this height and make the box visually bigger. */
+                box-sizing: border-box;
+                /* This tells the browser to include padding and border 
+                   inside the specified height and width. 
+                   So, total height stays 200px even with padding/border. */
+                
+        }
+        .box2{
+                color: red;
+                padding: 10px;
+                border:2px solid blue;
+                margin: 25px;
+                height: 200px;
+                box-sizing: border-box;
+                /* Same explanation applies as in .box1 */
+        }
+
+         /* Margin Collapse:
+            If two vertical margins of neighboring elements touch each other, 
+            only the larger margin is used — the smaller one is "collapsed".
+            This behavior is called margin collapsing.
+            It typically happens with block-level elements stacked vertically.
+         */
+
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+    
+</body>
+</html>
