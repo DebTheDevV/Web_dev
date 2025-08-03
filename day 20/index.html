@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        This is a sample HTML document to demonstrate the use of fonts in web development.
+        It includes both internal CSS styling and the use of Google Fonts.
+        Ideal for students learning HTML and CSS styling related to typography.
+    -->
+
+    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on all devices -->
+    <title>Document</title>
+     
+    <style>
+        /* 
+            Importing multiple Google Fonts using @import rule.
+            This allows us to use custom fonts in our headings and text.
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Grand+Hotel&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        /* Styling the h1 element */
+        h1 {
+            font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* Font family fallback: if 'Poppins' is not available, the browser will use the next available font in the list */
+        }
+
+        /* Styling all paragraph (p) elements */
+        p {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Clean and readable sans-serif font */
+           font-size: 20px;               /* Increases the font size for better readability */
+           text-decoration: underline;   /* Underlines the text */
+           line-height: 1.4;             /* Adds spacing between lines for better readability */
+           letter-spacing: 4px;          /* Adds space between letters */
+        }
+
+        /* Styling h2 to automatically capitalize each word */
+        h2 {
+            text-transform: capitalize; /* Capitalizes the first letter of each word */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Main heading demonstrating usage of Google Fonts -->
+        <h1>Fonts</h1>
+
+        <!-- Subheading showing text-transform property -->
+        <h2>hehe , you are a good person</h2> 
+        <!-- Capitalized using CSS property `text-transform: capitalize` -->
+
+        <!-- Paragraph demonstrating letter spacing and linking -->
+        <p style="letter-spacing: 2px;">
+            <!-- Inline style overrides CSS for demonstration. 2px of letter spacing -->
+            <!-- Hyperlink example could be added here if needed -->
+            This is a video about fonts
+        </p>
+
+        <!-- Another paragraph for demonstrating long paragraph formatting -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor, debitis suscipit, culpa libero odit error illo facilis magni cupiditate aliquam eius soluta perferendis perspiciatis itaque aliquid eligendi architecto dolorem! Sequi aperiam quia eum omnis assumenda, obcaecati ut tenetur. Dignissimos est vero quod fugit reiciendis!
+        </p>
+    </div>
+</body>
+</html>
