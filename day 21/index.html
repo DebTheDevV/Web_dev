@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        This HTML file demonstrates how to apply various CSS font and text properties.
+        It covers font-family, text alignment, text decoration, overflow behavior, 
+        and how to style different headings and paragraphs.
+    -->
+
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on mobile devices -->
+    <title>Document</title>
+
+    <style>
+        /* Styling for h1 heading */
+        h1 {
+            font-family: 'Poppins','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+                         'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* Uses 'Poppins' as primary font and falls back to system sans-serif fonts */
+        }
+
+        /* Styling for all paragraph elements */
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* Clean, modern sans-serif font */
+            font-size: 20px;               /* Increases readability */
+            text-decoration: underline;   /* Underlines the paragraph text */
+            line-height: 1.4;             /* Spacing between lines */
+            letter-spacing: 4px;          /* Adds extra space between characters */
+        }
+
+        /* Styling for h2 subheading */
+        h2 {
+            text-transform: capitalize;               /* Capitalizes the first letter of every word */
+            text-decoration-color: rgb(130, 145, 158);/* Custom color for underline */
+            text-decoration: underline;               /* Adds underline */
+            text-decoration-thickness: 7px;           /* Makes underline thicker */
+            text-indent: 60px;                        /* Indents first line */
+            text-overflow: clip;                      /* Clips overflow text (only useful with limited width) */
+            text-align: center;                       /* Centers the heading */
+        }
+
+        /* Class to style the long paragraph with overflow handling */
+        .Lorem {
+            border: 2px solid red;     /* Adds red border for visibility */
+            width: 105px;              /* Constrains the width */
+            text-overflow: elipse;     /* Typo: should be 'ellipsis' to show "..." when text is clipped */
+            overflow: hidden;          /* Hides any text that overflows the box */
+            word-break: break-all;     /* Breaks words to prevent overflow */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main heading of the document -->
+    <h1>Fonts</h1>
+
+    <!-- Subheading with enhanced decoration and formatting -->
+    <h2>About Fonts</h2>
+
+    <div>
+        <!-- Paragraph introducing the topic -->
+        <p>
+            this is a video on fonts
+        </p>
+    </div>
+
+    <div>
+        <!-- Paragraph with class 'Lorem' to demonstrate text overflow and break behavior -->
+        <p class="Lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quae possimus nihil veritatis veniam omnis eos repudiandae officiis. Modi totam iste consectetur adipisci nulla atque quaerat temporibus. Consequuntur, deserunt? At accusantium, error reiciendis, vero nobis suscipit nesciunt aspernatur, qui perferendis nihil quod repellendus recusandae quo! Amet eligendi alias optio veritatis omnis numquam tenetur doloremque minus tempora porro, quos voluptatibus pariatur deleniti! Quia iusto earum sapiente.
+        </p>
+    </div>
+
+</body>
+</html>
